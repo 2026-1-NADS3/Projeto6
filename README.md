@@ -29,8 +29,7 @@ O projeto **Sistema Mobile - Clínica Maya** é uma plataforma integrada (Aplica
 <br><br>
 Através do aplicativo mobile, os pacientes podem visualizar seus planos de exercícios diários com instruções detalhadas, além de realizar um "check-in" contínuo, registrando o nível de dor e dificuldade após cada execução. Simultaneamente, o módulo web (painel administrativo) permite que a profissional gerencie prontuários, prescreva novas rotinas de forma personalizada e acompanhe a evolução do tratamento em tempo real, garantindo maior engajamento e eficácia na recuperação.
 <br><br>
-May the force be with you!
-<br><br>
+
 
 ## 🛠 Estrutura de pastas
 
