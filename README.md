@@ -1,9 +1,3 @@
-```sh
-Utilize o site <https://www.toptal.com/developers/gitignore> para gerar seu arquivo gitignore e apague este campo.
-
-Vide tutoriais do PI.
-```
-
 # FECAP - Fundação de Comércio Álvares Penteado
 
 <p align="center">
@@ -21,14 +15,16 @@ Vide tutoriais do PI.
 ## Descrição
 
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="Sistema Mobile - Clínica Maya" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+  <img src="imagens/maya_clinica_rpg.png" alt="Sistema Mobile - Clínica Maya" width="700px">
+  <br>
+  <span style="font-size: 14px;"><em>Interface e Identidade Visual do Sistema Clínica Maya - Fisioterapia & RPG.</em></span>
 </p>
 
 O projeto **Sistema Mobile - Clínica Maya** é uma plataforma integrada (Aplicativo Mobile e Módulo Web) desenvolvida para otimizar o acompanhamento de pacientes de fisioterapia, com foco especializado em Reeducação Postural Global (RPG). O objetivo da solução é digitalizar e centralizar a comunicação entre a fisioterapeuta Maya Yoshiko Yamamoto e seus pacientes, substituindo o envio disperso de mensagens e orientações por um ambiente dedicado, organizado e de fácil acesso.
-<br><br>
+
 Através do aplicativo mobile, os pacientes podem visualizar seus planos de exercícios diários com instruções detalhadas, além de realizar um "check-in" contínuo, registrando o nível de dor e dificuldade após cada execução. Simultaneamente, o módulo web (painel administrativo) permite que a profissional gerencie prontuários, prescreva novas rotinas de forma personalizada e acompanhe a evolução do tratamento em tempo real, garantindo maior engajamento e eficácia na recuperação.
-<br><br>
+
+---
 
 
 ## 🛠 Estrutura de pastas
