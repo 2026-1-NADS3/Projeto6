@@ -19,8 +19,11 @@ O diagrama de processo divide o desenvolvimento em 5 fases principais, cada uma 
 * **Aceitação e Liberação**: Foco em **Usabilidade**, validando se a interface é intuitiva e protege o usuário contra erros.
 
 ## 📂 Estrutura do Repositório
-* **Testes e Qualidade de Software (DevOps)**: Contém o PDF com o diagrama detalhado e o relatório técnico, além do link do Figma.
+* **Testes e Qualidade de Software (DevOps)**: Contém o Template com o diagrama detalhado e o relatório técnico, conforme solicitado pelo professor.
 * **README.md**: Explicação geral da entrega.
+
+## 🔗 Link do Figma
+https://www.figma.com/board/eo3x6kpDUeG4roUYulnU8U/Diagrama-de-Processo-de-Qualidade?node-id=0-1&t=sK8pVibjHFLpI4It-1
 
 ## 🚀 Benefícios da Abordagem
 * **Redução de retrabalho** ao identificar falhas precocemente.
