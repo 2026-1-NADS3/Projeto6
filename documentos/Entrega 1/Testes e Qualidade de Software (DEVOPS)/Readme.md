@@ -2,10 +2,6 @@
 
 Este repositório contém a documentação e o mapeamento de um processo de qualidade de software aplicado ao ciclo de vida de desenvolvimento (SDLC). O objetivo principal é demonstrar como os atributos da norma **ISO/IEC 25010** atuam como filtros de qualidade em cada etapa do projeto.
 
-## 📊 Visualização do Processo
-![Diagrama de Processo](./imagens/Diagrama%20de%20Processo%20de%20Qualidade.jpg)
----
-
 ## 📌 Sobre o Projeto
 A qualidade de software é tratada aqui como um processo contínuo, e não apenas uma etapa final de busca por bugs. O fluxo proposto garante que o produto final seja tecnicamente maduro e alinhado com os padrões internacionais da indústria.
 
