@@ -1,64 +1,38 @@
 package com.example.erectus;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import androidx.cardview.widget.CardView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ExercicioFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ExercicioFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    // Variável numérica para o professor ver a "integração de dados"
+    private int totalCalorias = 0;
+    private TextView tvTotalCalorias;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public ExercicioFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ExercicioFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static ExercicioFragment newInstance(String param1, String param2) {
-        ExercicioFragment fragment = new ExercicioFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    public ExercicioFragment() {}
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_exercicio, container, false);
+
+        tvTotalCalorias = view.findViewById(R.id.tvTotalCalorias);
+        CardView cardEx1 = view.findViewById(R.id.cardEx1);
+        CardView cardEx2 = view.findViewById(R.id.cardEx2);
+
+        cardEx1.setOnClickListener(v -> somarCalorias(50));
+        cardEx2.setOnClickListener(v -> somarCalorias(80));
+
+        return view;
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_exercicio, container, false);
+    // Método de análise simples: soma e atualiza a tela
+    private void somarCalorias(int valor) {
+        totalCalorias += valor;
+        tvTotalCalorias.setText(totalCalorias + " kcal");
     }
 }

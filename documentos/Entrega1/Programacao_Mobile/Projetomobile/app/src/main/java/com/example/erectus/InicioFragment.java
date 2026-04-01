@@ -1,50 +1,48 @@
 package com.example.erectus;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class InicioFragment extends Fragment {
 
-
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-
-    private String mParam1;
-    private String mParam2;
-
     public InicioFragment() {
-        // Requer construtor
-    }
-
-
-    public static InicioFragment newInstance(String param1, String param2) {
-        InicioFragment fragment = new InicioFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+        // Construtor vazio obrigatório
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inicio, container, false);
+
+        // 1. Inflamos o layout
+        View view = inflater.inflate(R.layout.fragment_inicio, container, false);
+
+        // 2. Vinculamos os botões que você criou no XML
+        Button btnGerenciar = view.findViewById(R.id.btnGerenciarConsulta);
+        Button btnContinuar = view.findViewById(R.id.btnContinuar);
+
+        // 3. Ação do botão GERENCIAR
+        btnGerenciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Abrindo agenda da Clínica Liberdade...", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // 4. Ação do botão CONTINUAR
+        btnContinuar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Aqui você pode fazer ele pular direto para o ExercicioFragment
+                // ou apenas mostrar o aviso por enquanto
+                Toast.makeText(getActivity(), "Retomando seus treinos!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        return view;
     }
 }

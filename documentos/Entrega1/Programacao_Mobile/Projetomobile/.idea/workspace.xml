@@ -10,6 +10,26 @@
           <theme>@style/Theme.Erectus</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_exercicio.xml">
+        <config>
+          <theme>@style/Theme.Erectus</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_inicio.xml">
+        <config>
+          <theme>@style/Theme.Erectus</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_perfil.xml">
+        <config>
+          <theme>@style/Theme.Erectus</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_progresso.xml">
+        <config>
+          <theme>@style/Theme.Erectus</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/menu_navegacao.xml">
         <config>
           <theme>@style/Theme.Erectus</theme>
@@ -22,111 +42,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bff831b7-33cf-4de0-980e-e733b0b8b291" name="Changes" comment="App funcionando">
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/9.1.0/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/9.1.0/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/9.1.0/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/9.1.0/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.idea/AndroidProjectSystem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.idea/caches/deviceStreaming.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.idea/deviceManager.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/androidTest/java/com/example/erectus/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/java/com/example/erectus/CadastroActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/java/com/example/erectus/ExercicioFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/java/com/example/erectus/InicioFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/java/com/example/erectus/LoginActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/java/com/example/erectus/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/java/com/example/erectus/PerfilFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/java/com/example/erectus/ProgressoFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/drawable/appleicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/drawable/erecicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/drawable/ggicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/drawable/ic_exercicio.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/drawable/ic_home.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/drawable/ic_perfil.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/drawable/ic_progresso.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/layout/activity_cadastro.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/layout/activity_login.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/layout/fragment_exercicio.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/layout/fragment_inicio.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/layout/fragment_perfil.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/layout/fragment_progresso.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/menu/menu_navegacao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/app/src/test/java/com/example/erectus/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/build/reports/problems/problems-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/local.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Projetomobile/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/Venha para a FECAP!.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/backend maya/node-backend/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/backend maya/node-backend/ENTREGA_CLOUD.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/backend maya/node-backend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/backend maya/node-backend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/backend maya/node-backend/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/backend maya/node-backend/src/controllers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/backend maya/node-backend/src/models/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/backend maya/node-backend/src/routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/backend maya/node-backend/src/services/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/backend maya/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/backend maya/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Cloud Native/backend maya/setup_and_monitor.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Programação Mobile/Venha para a FECAP!.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Testes e Qualidade de Software (DEVOPS)/Diagrama de Processo de Qualidade.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Testes e Qualidade de Software (DEVOPS)/DiagramadeProcessodeQualidade.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Testes e Qualidade de Software (DEVOPS)/Figma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/Testes e Qualidade de Software (DEVOPS)/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/UX/Link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/UX/Personas-e-Mapa-de-Empatia (1).pdf.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/UX/link_wireframe_e_mapa-jornada.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Entrega 1/UX/userStories_UX.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/erectus/CadastroActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/erectus/CadastroActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/erectus/ExercicioFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/erectus/ExercicioFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/erectus/InicioFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/erectus/InicioFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/erectus/PerfilFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/erectus/PerfilFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/erectus/ProgressoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/erectus/ProgressoFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_exercicio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_exercicio.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +108,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Android App.app.executor": "Debug",
+    "Android App.app.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -314,12 +237,12 @@
       <map>
         <entry key="com.example.erectus">
           <value>
-            <CheckInfo lastCheckTimestamp="1774914038057" />
+            <CheckInfo lastCheckTimestamp="1775005062458" />
           </value>
         </entry>
         <entry key="com.example.erectus.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1774914038049" />
+            <CheckInfo lastCheckTimestamp="1775005062462" />
           </value>
         </entry>
       </map>

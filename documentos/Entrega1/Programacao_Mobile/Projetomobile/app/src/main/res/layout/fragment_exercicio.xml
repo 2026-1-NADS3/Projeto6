@@ -1,94 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
-    tools:context=".ExercicioFragment">
+    android:background="#F5F5F5">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="32dp">
 
-        <EditText
-            android:id="@+id/etBuscar"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginHorizontal="24dp"
-            android:layout_marginTop="24dp"
-            android:background="#1D5C89"
-            android:drawableStart="@android:drawable/ic_menu_search"
-            android:drawablePadding="8dp"
-            android:hint="BUSCAR"
-            android:paddingStart="16dp"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#CCCCCC"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardResumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            app:cardBackgroundColor="#1D5C89"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CALORIAS ESTIMADAS HOJE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/tvTotalCalorias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 kcal"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/tvSubExercicio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="EXERCÍCIOS"
+            android:text="SELECIONE PARA SOMAR"
             android:textColor="#1D5C89"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etBuscar" />
+            app:layout_constraintTop_toBottomOf="@+id/cardResumo" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardEx1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             app:cardCornerRadius="12dp"
             app:layout_constraintEnd_toStartOf="@+id/cardEx2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvSubExercicio">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
                 <ImageView
-                    android:id="@+id/ivEx1"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/erecicon"
-                    app:layout_constraintTop_toTopOf="parent" />
-
+                    android:layout_height="80dp"
+                    android:src="@drawable/erecicon" />
                 <TextView
-                    android:id="@+id/tvNomeEx1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:text="Alongamento"
-                    android:textColor="#1D5C89"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ivEx1" />
-
+                    android:textStyle="bold" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="Duração: 8min"
-                    android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvNomeEx1" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:text="10 min | 50 kcal"
+                    android:textSize="10sp" />
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -101,42 +97,27 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cardEx1"
             app:layout_constraintTop_toTopOf="@+id/cardEx1">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
                 <ImageView
-                    android:id="@+id/ivEx2"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/erecicon"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/tvNomeEx2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Cocóras"
-                    android:textColor="#1D5C89"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ivEx2" />
-
+                    android:layout_height="80dp"
+                    android:src="@drawable/erecicon" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="Duração: 15min"
-                    android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvNomeEx2" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:text="Agachamento"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 min | 80 kcal"
+                    android:textSize="10sp" />
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
