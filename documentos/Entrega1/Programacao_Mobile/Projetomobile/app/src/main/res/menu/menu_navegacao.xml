@@ -13,6 +13,10 @@
         android:icon="@drawable/ic_exercicio"
         android:title="Exercícios" />
     <item
+        android:id="@+id/nav_agendamento"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="Agenda" />
+    <item
         android:id="@+id/nav_perfil"
         android:icon="@drawable/ic_perfil"
         android:title="Perfil" />
