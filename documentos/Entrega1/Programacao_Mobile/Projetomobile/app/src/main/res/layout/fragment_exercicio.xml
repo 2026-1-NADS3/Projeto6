@@ -18,18 +18,21 @@
             app:cardBackgroundColor="#1D5C89"
             app:cardCornerRadius="12dp"
             app:layout_constraintTop_toTopOf="parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="16dp"
                 android:gravity="center">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="CALORIAS ESTIMADAS HOJE"
                     android:textColor="#FFFFFF"
                     android:textSize="10sp" />
+
                 <TextView
                     android:id="@+id/tvTotalCalorias"
                     android:layout_width="wrap_content"
@@ -64,25 +67,31 @@
             app:layout_constraintEnd_toStartOf="@+id/cardEx2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvSubExercicio">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:padding="8dp">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:src="@drawable/erecicon" />
+
                 <TextView
+                    android:id="@+id/tvNomeEx1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Alongamento"
+                    android:text="Carregando..."
                     android:textStyle="bold" />
+
                 <TextView
+                    android:id="@+id/tvDescEx1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10 min | 50 kcal"
+                    android:text="Buscando dados..."
                     android:textSize="10sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -97,25 +106,31 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cardEx1"
             app:layout_constraintTop_toTopOf="@+id/cardEx1">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:padding="8dp">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:src="@drawable/erecicon" />
+
                 <TextView
+                    android:id="@+id/tvNomeEx2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Agachamento"
+                    android:text="Carregando..."
                     android:textStyle="bold" />
+
                 <TextView
+                    android:id="@+id/tvDescEx2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="15 min | 80 kcal"
+                    android:text="Buscando dados..."
                     android:textSize="10sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
