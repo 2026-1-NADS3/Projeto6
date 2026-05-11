@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: clinica_maya
+    ports:
+      - "3306:3306"
+    # 🚀 ESSA LINHA É FUNDAMENTAL PARA CRIAR AS TABELAS SOZINHO:
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  api:
+    build: .
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      # 🐋 Dentro do Docker, o "IP" do banco é o nome do serviço: 'db'
+      DB_HOST: db 
+      DB_USER: root
+      DB_PASS: root
+      DB_NAME: clinica_maya
