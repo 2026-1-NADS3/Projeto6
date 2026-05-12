@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="32dp"
+    tools:context=".CadastroActivity">
+
+    <ImageView
+        android:id="@+id/ivLogoPrincipal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/erecicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTabLogin"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:text="LOGIN"
+        android:textColor="#333333"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnTabCriarConta"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogoPrincipal" />
+
+    <Button
+        android:id="@+id/btnTabCriarConta"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="CRIAR CONTA"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:backgroundTint="#1D5C89"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTabLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTabLogin"
+        app:layout_constraintTop_toTopOf="@+id/btnTabLogin" />
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="#F8F8F8"
+        android:hint="NOME"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTabLogin" />
+
+    <EditText
+        android:id="@+id/etDataNascimento"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="#F8F8F8"
+        android:hint="DATA DE NASCIMENTO"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNome" />
+
+    <EditText
+        android:id="@+id/etCpf"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="#F8F8F8"
+        android:hint="CPF"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascimento" />
+
+    <EditText
+        android:id="@+id/etTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="#F8F8F8"
+        android:hint="TELEFONE"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCpf" />
+
+    <EditText
+        android:id="@+id/etSenhaCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="#F8F8F8"
+        android:hint="SENHA"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTelefone" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="CADASTRE"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#1D5C89"
+        app:cornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSenhaCadastro" />
+
+    <TextView
+        android:id="@+id/tvCadastreCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Cadastre com"
+        android:textColor="#555555"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/ivApple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivApple"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/appleicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivGoogle"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivGoogle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ggicon"
+        app:layout_constraintBottom_toBottomOf="@+id/ivApple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivApple"
+        app:layout_constraintTop_toTopOf="@+id/ivApple" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
