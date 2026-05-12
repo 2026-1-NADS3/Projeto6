@@ -10,7 +10,8 @@
 
 ## Integrantes: <a href="https://www.linkedin.com/in/gustavomoura3112?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Gustavo Moura</a>, <a href="https://www.linkedin.com/in/lucas-soares-corsino-885306288/">Lucas Corsino</a> , Guilherme Gomes Salvadeo, <a href="https://www.linkedin.com/in/manoel-rondon">Manoel Rondon, <a href="https://www.linkedin.com">Matheus</a>
 
-## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Dr. Victor Von Doom</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Saitama</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Strange</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Yoda</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Gero</a>
+## Professores Orientadores: Rodrigo da Rosa, Francisco Escobar, Aimar Lopes, Jefferson de Oliveira
+
 
 ## Descrição
 
