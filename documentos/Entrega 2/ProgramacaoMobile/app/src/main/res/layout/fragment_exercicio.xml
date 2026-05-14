@@ -3,137 +3,209 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="@color/background_gray"
+    android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="32dp">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardResumo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="24dp"
-            app:cardBackgroundColor="#1D5C89"
-            app:cardCornerRadius="12dp"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:gravity="center">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="CALORIAS ESTIMADAS HOJE"
-                    android:textColor="#FFFFFF"
-                    android:textSize="10sp" />
-
-                <TextView
-                    android:id="@+id/tvTotalCalorias"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0 kcal"
-                    android:textColor="#FFFFFF"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+        android:padding="16dp">
 
         <TextView
-            android:id="@+id/tvSubExercicio"
+            android:id="@+id/txtTituloExerciciosGeral"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="SELECIONE PARA SOMAR"
-            android:textColor="#1D5C89"
+            android:text="ROTINA DE HOJE"
+            android:textColor="@color/maya_cyan_dark"
+            android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardResumo" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtResumoHoje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avalie seus exercícios ao finalizar"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/txtTituloExerciciosGeral"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardEx1"
+            android:id="@+id/cardExercicioCompleto1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:layout_constraintTop_toBottomOf="@id/txtResumoHoje"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/id_da_sua_imagem_1_aqui"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@color/background_gray"
+                    android:scaleType="centerInside"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/id_do_seu_titulo_1_aqui"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Alongamento Cervical"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@id/id_da_sua_imagem_1_aqui"
+                    app:layout_constraintStart_toEndOf="@id/id_da_sua_imagem_1_aqui"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtDetalhes1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="2 séries de 15 segundos"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/id_do_seu_titulo_1_aqui"
+                    app:layout_constraintStart_toStartOf="@id/id_do_seu_titulo_1_aqui"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/btnAvaliar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#E0E0E0"
+                    android:text="AVALIAR"
+                    android:textColor="#333333"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@id/id_da_sua_imagem_1_aqui"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/id_do_seu_botao_iniciar_1_aqui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/maya_cyan"
+                    android:text="INICIAR"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@id/id_da_sua_imagem_1_aqui"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardExercicioCompleto2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            app:cardCornerRadius="12dp"
-            app:layout_constraintEnd_toStartOf="@+id/cardEx2"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:layout_constraintTop_toBottomOf="@id/cardExercicioCompleto1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvSubExercicio">
+            app:layout_constraintEnd_toEndOf="parent">
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="8dp">
+                android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:id="@+id/imgExercicio2_Placeholder"
+                    android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/erecicon" />
+                    android:background="@color/background_gray"
+                    android:scaleType="centerInside"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    app:tint="@color/maya_cyan"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
-                    android:id="@+id/tvNomeEx1"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/txtTitulo2_Placeholder"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Carregando..."
-                    android:textStyle="bold" />
+                    android:layout_marginStart="16dp"
+                    android:text="Fortalecimento Lombar"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@id/imgExercicio2_Placeholder"
+                    app:layout_constraintStart_toEndOf="@id/imgExercicio2_Placeholder"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
                 <TextView
-                    android:id="@+id/tvDescEx1"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/txtDetalhes2"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Buscando dados..."
-                    android:textSize="10sp" />
-            </LinearLayout>
+                    android:layout_marginTop="4dp"
+                    android:text="3 séries de 10 repetições"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/txtTitulo2_Placeholder"
+                    app:layout_constraintStart_toStartOf="@id/txtTitulo2_Placeholder"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/btnAvaliar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#E0E0E0"
+                    android:text="AVALIAR"
+                    android:textColor="#333333"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@id/imgExercicio2_Placeholder"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/btnIniciar2_Placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/maya_cyan"
+                    android:text="INICIAR"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@id/imgExercicio2_Placeholder"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardEx2"
+        <Button
+            android:id="@+id/btnSalvarTreino"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="24dp"
-            app:cardCornerRadius="12dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/maya_cyan_dark"
+            android:text="SALVAR ROTINA"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/cardExercicioCompleto2"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/cardEx1"
-            app:layout_constraintTop_toTopOf="@+id/cardEx1">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="8dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:src="@drawable/erecicon" />
-
-                <TextView
-                    android:id="@+id/tvNomeEx2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Carregando..."
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvDescEx2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Buscando dados..."
-                    android:textSize="10sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            app:layout_constraintBottom_toBottomOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
