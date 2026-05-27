@@ -1,0 +1,26 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background_gray">
+    <!--  Banner decorativo azul  -->
+    <View android:id="@+id/bgAzulDor" android:layout_width="0dp" android:layout_height="160dp" android:background="@color/maya_cyan" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+    <!--  Logo no banner  -->
+    <ImageView android:id="@+id/imgLogoDor" android:layout_width="110dp" android:layout_height="40dp" android:scaleType="fitCenter" android:src="@drawable/logo_maya" android:contentDescription="Logo Maya" app:layout_constraintTop_toTopOf="@id/bgAzulDor" app:layout_constraintBottom_toBottomOf="@id/bgAzulDor" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+    <!--  CardView do formulário de dor  -->
+    <androidx.cardview.widget.CardView android:id="@+id/cardRegistroDor" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="-28dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="12dp" app:cardElevation="6dp" app:layout_constraintTop_toBottomOf="@id/bgAzulDor" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="20dp">
+            <!--  Pergunta sobre a dor  -->
+            <TextView android:id="@+id/txtPerguntaDor" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Qual o seu nível de dor após o exercício?" android:textSize="16sp" android:textColor="@color/text_dark" android:textStyle="bold" android:gravity="center" android:layout_marginBottom="8dp" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+            <!--  Exibição numérica dinâmica do nível de dor  -->
+            <TextView android:id="@+id/txtNivelDorValor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:textSize="64sp" android:textColor="@color/maya_cyan" android:textStyle="bold" android:gravity="center" android:layout_marginBottom="4dp" app:layout_constraintTop_toBottomOf="@id/txtPerguntaDor" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+            <!--  Labels da escala  -->
+            <LinearLayout android:id="@+id/layoutLabelsEscala" android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="6dp" app:layout_constraintTop_toBottomOf="@id/txtNivelDorValor" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="0 — Nenhuma dor" android:textSize="10sp" android:textColor="@color/text_muted" android:gravity="start"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="10 — Dor máxima" android:textSize="10sp" android:textColor="@color/text_muted" android:gravity="end"/>
+            </LinearLayout>
+            <!--  SeekBar de dor  -->
+            <SeekBar android:id="@+id/seekBarDor" android:layout_width="0dp" android:layout_height="wrap_content" android:max="10" android:progress="5" android:progressTint="@color/maya_cyan" android:thumbTint="@color/maya_cyan_dark" android:progressBackgroundTint="@color/divider_gray" android:layout_marginBottom="16dp" app:layout_constraintTop_toBottomOf="@id/layoutLabelsEscala" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+            <!--  Campo de observação  -->
+            <EditText android:id="@+id/editObsDor" android:layout_width="0dp" android:layout_height="80dp" android:hint="Alguma observação extra? (Opcional)" android:inputType="textMultiLine" android:gravity="top|start" android:background="@drawable/bg_input_rounded" android:paddingStart="12dp" android:paddingEnd="12dp" android:paddingTop="10dp" android:textSize="13sp" android:textColor="@color/text_dark" android:textColorHint="@color/text_muted" android:layout_marginBottom="16dp" app:layout_constraintTop_toBottomOf="@id/seekBarDor" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+            <!--  Botão Salvar  -->
+            <Button android:id="@+id/btnSalvarDor" android:layout_width="0dp" android:layout_height="48dp" android:text="SALVAR AVALIAÇÃO" android:textColor="@color/white" android:backgroundTint="@color/maya_cyan" android:textSize="14sp" android:letterSpacing="0.05" app:layout_constraintTop_toBottomOf="@id/editObsDor" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
